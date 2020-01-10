@@ -15,8 +15,8 @@ function App() {
           <div className="flex flex-1"></div>
           <img src={chevron} className="chevron" />
         </div>
-        <div className="jobs flex flex-column bg">
-          <div className="flex flex-row flex-around flex-fill">
+        <div className="jobs flex flex-column bg-black">
+          <div className="flex flex-row flex-around flex-fill bg-white">
             <div className="job vorpal"></div>
             <div className="job jpl"></div>
             <div className="job skills">Skills and Other</div>
