@@ -1,0 +1,153 @@
+body {
+  /* font-family: 'EB Garamond', serif; */
+  font-family: 'Ibarra Real Nova', serif;
+  background-color: black;
+  color: white;
+}
+
+.bg {
+  background-color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-fill {
+  flex-grow: 1;
+}
+
+.flex-1 {
+  flex-grow: 1;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  align-items: center;
+}
+
+.flex-bottom {
+  align-items: flex-end;
+}
+
+.flex-around {
+  justify-content: space-around;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.mainWrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+.main {
+  position: relative;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 5px #000;
+  flex-direction: column;
+  font-size: 60px;
+  /* background-color: rgba(0,0,0,0.2); */
+}
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.me {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.me::after {
+  /* background-image: url("temp.png"); */
+  background-image: url("./img/me.jpg");
+}
+
+.hr {
+  border-bottom: 1px solid white;
+  margin: 10px 0;
+  width: 50%;
+}
+
+.chevron {
+  height: 50px;
+  width: 50px;
+  fill: white;
+}
+
+.jobs {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 5px #000;
+  flex-direction: column;
+  font-size: 60px;
+}
+
+.job {
+  width: 32vw;
+  height: 25vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  border: 5px solid white;
+}
+
+.job:hover {
+  /* background-color: rgba(0,0,0,0.3); */
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.jobTitle {
+  position: relative;;
+  bottom: 7vw;
+}
+
+.vorpal {
+  background-image: url("./img/vorpal.png");
+  background-color: #242424;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.jpl {
+  background-image: url("./img/nasajpl.jpg");
+  background-color: black;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.skills {
+  background-color: black;
+}
