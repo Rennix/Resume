@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/resume/static/css/main.e1ed869c.chunk.css",
+    "main.js": "/resume/static/js/main.8039387a.chunk.js",
+    "main.js.map": "/resume/static/js/main.8039387a.chunk.js.map",
+    "runtime-main.js": "/resume/static/js/runtime-main.966029af.js",
+    "runtime-main.js.map": "/resume/static/js/runtime-main.966029af.js.map",
+    "static/js/2.e65a7278.chunk.js": "/resume/static/js/2.e65a7278.chunk.js",
+    "static/js/2.e65a7278.chunk.js.map": "/resume/static/js/2.e65a7278.chunk.js.map",
+    "index.html": "/resume/index.html",
+    "precache-manifest.b518ad852db84634246c9f4faa639e1f.js": "/resume/precache-manifest.b518ad852db84634246c9f4faa639e1f.js",
+    "service-worker.js": "/resume/service-worker.js",
+    "static/css/main.e1ed869c.chunk.css.map": "/resume/static/css/main.e1ed869c.chunk.css.map",
+    "static/js/2.e65a7278.chunk.js.LICENSE": "/resume/static/js/2.e65a7278.chunk.js.LICENSE",
+    "static/media/chevron-down.svg": "/resume/static/media/chevron-down.85cf0ba5.svg",
+    "static/media/App.css": "/resume/static/media/vorpal.f9605f53.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.966029af.js",
+    "static/js/2.e65a7278.chunk.js",
+    "static/css/main.e1ed869c.chunk.css",
+    "static/js/main.8039387a.chunk.js"
+  ]
+}
