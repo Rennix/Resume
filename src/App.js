@@ -20,9 +20,9 @@ class App extends Component {
     }
     else{
       this.setState({isOpen: true, current: page});
-      // setTimeout(function(){window.scrollTo(0,document.querySelector(".collapse").scrollHeight)},1);
-      setTimeout(function(){window.scrollTo(0, document.body.scrollHeight);},1000);
-      // document.getElementById("collapse").scrollTop = document.getElementById("collapse").scrollHeight
+
+      var element = document.getElementById("scrollTo");
+      setTimeout(function(){element.scrollIntoView({behavior: "smooth", alignToTop: true})},500);
     }
   }
 
@@ -90,6 +90,7 @@ class App extends Component {
                 {jobDesc}
               </div>
             </Collapse>
+            <div id='scrollTo'></div>
           </div>
         </div>
       </div>
