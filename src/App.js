@@ -20,9 +20,10 @@ class App extends Component {
     }
     else{
       this.setState({isOpen: true, current: page});
-
-      var element = document.getElementById("scrollTo");
-      setTimeout(function(){element.scrollIntoView({behavior: "smooth", alignToTop: true})},500);
+      if(!this.state.isOpen){
+        var element = document.getElementById("scrollTo");
+        setTimeout(function(){element.scrollIntoView({behavior: "smooth", alignToTop: true})},500);
+      }
     }
   }
 
@@ -85,11 +86,11 @@ class App extends Component {
               <div className={skillsClasses} onClick={() => this.toggle("skills")}><span style={{margin:"5px"}}>About and Skills</span></div>
             </div>
             <Collapse isOpened={this.state.isOpen}>
+              <div id='scrollTo'></div>
               <div id="collapse" className="collapse normalText">
                 {jobDesc}
               </div>
             </Collapse>
-            <div id='scrollTo'></div>
           </div>
         </div>
       </div>
