@@ -78,7 +78,6 @@ body {
   left: 0;
 
   transform: translateZ(-1px) scale(1.5);
-  background-size: 100%;
   z-index: -1;
   background-position: center;
   background-size: 100%;
@@ -96,13 +95,30 @@ body {
 
 @media (max-width: 600px) {
   .headerText {
-    font-size: 30px;
+    font-size: 28px;
   }
   .jobText {
     font-size: 20px;
   }
   .normalText {
     font-size: 20px;
+  }
+  .selected {
+    box-shadow: inset 0 -7px 0 #c80000;
+  }
+  .parallax::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    transform: translateZ(-1px) scale(1.5);
+    z-index: -1;
+    background-position: center;
+    background-size: 300%;
+    background-repeat: no-repeat;
   }
 }
 
@@ -116,6 +132,9 @@ body {
   .normalText {
     font-size: 24px;
   }
+  .selected {
+    box-shadow: inset 0 -15px 0 #c80000;
+  }
 }
 
 @media (min-width: 800px) {
@@ -127,6 +146,9 @@ body {
   }
   .normalText {
     font-size: 30px;
+  }
+  .selected {
+    box-shadow: inset 0 -15px 0 #c80000;
   }
 }
 
@@ -229,6 +251,7 @@ body {
   color: #c80000;
   font-size: 35px;
   font-weight: bold;
+  margin: 10px;
 }
 
 .company {
@@ -236,19 +259,17 @@ body {
   opacity: 0.7;
   font-size: 30px;
   font-weight: bold;
+  margin: 0 10px 10px 10px;
 }
 
 .duration {
   color: rgba(0,0,0,.74);
   font-size: 20px;
+  margin: 0 10px 10px 10px;
 }
 
 .desc {
   color: rgba(0,0,0,.74);
   font-size: 24px;
-}
-
-.selected {
-  /* border-bottom: 10px solid #c80000; */
-  box-shadow: inset 0 -15px 0 #c80000;
+  margin: 10px;
 }
